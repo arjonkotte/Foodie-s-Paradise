@@ -1,0 +1,17 @@
+<%- include('../partials/header') %>
+
+ <head>
+    <title><% title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Foodie's Paradise</h1>
+    <table id="list">
+      <% recipes.forEach(function(r) { %>
+        <tr>
+          <td><%=r.title%></td>
+        </tr>
+      <% }); %>
+  </body>
+
+<%- include('../partials/footer') %>
