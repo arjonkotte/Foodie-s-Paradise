@@ -10,6 +10,8 @@
       <% recipes.forEach(function(r) { %>
         <tr>
           <td><%=r.title%></td>
+          <td><%=r.prepTime%></td>
+          <td><a href="/recipes/<%=r._id%>">DETAILS</a></td>
         </tr>
       <% }); %>
   </body>
