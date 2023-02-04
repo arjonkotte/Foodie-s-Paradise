@@ -12,6 +12,7 @@ function newRecipe (req, res) {
 }
 
 function create(req,res) {
+    req.body.ingredients = req.body.ingredients.split(',');
     const newRecipe = new recipe(req.body)
     newRecipe.save(function(err) {
     if(err) return res.redirect('/recipes/new');
@@ -21,7 +22,6 @@ function create(req,res) {
 }
 
 function show (req, res){
-    console.log(req.params.id)
     recipe.findById(req.params.id, function(err, recipe) {
         res.render('recipes/show', { title: recipe.title, recipe} )
     })
