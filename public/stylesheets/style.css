@@ -1,11 +1,12 @@
 * {
   box-sizing: border-box;
-  font-family: Helvetica;
+  font-family: "Helvetica", cursive;
   color: #352005;
 }
 
 body {
   margin: 0;
+
   height: 100vh;
   display: grid;
   grid-template-rows: 50px 1fr;
@@ -16,6 +17,7 @@ body {
 
 h2 {
   margin-bottom: 0px;
+  
 }
 
 
@@ -126,7 +128,13 @@ td > a:hover {
 }
 
 
-
-
+@media (max-width: 600px) {
+  body > nav {
+    font-size: 13px;
+    display: flex;
+    height: 10vh;
+    padding: 8px 10px 0px 10px;
+  }
+}
 
 

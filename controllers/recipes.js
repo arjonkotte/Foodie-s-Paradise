@@ -15,24 +15,12 @@ function newRecipe (req, res) {
 function create(req,res) {
     req.body.ingredients = req.body.ingredients.split(',');
     
+    const newRecipe = new recipe(req.body)
     
-    const img = new image ({
-        data: fs.readFileSync(path.join(__dirname + '/uploads/' + req.file.filename)),
-        contentType: 'image/png'
-    })
-
-    const newRecipe = new recipe({
-        title: req.body.title,
-        instructions: req.body.instructions,
-        prepTime: req.body.prepTime,
-        ingredients: req.body.ingredients,
-        image: img,
-        reviews: [reviewSchema]
-    })
     newRecipe.save(function(err) {
-    if(err) return res.redirect('/recipes/new');
-    
-    res.redirect('recipes');
+        if(err) return res.redirect('/recipes/new');
+        console.log(err)
+        res.redirect('recipes');
     })
 }
 
