@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  font-family: Helvetica;
+  color: #352005;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  grid-template-areas: 
+    "nav"
+    "main"
+}
+
+h2 {
+  margin-bottom: 0px;
+}
+
+
+body > nav {
+  grid-area: nav;
+  background-color: #e99931;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 50px 0 30px;
+}
+
+nav > img {
+  width: 34px;
+  object-fit: contain;
+  margin-right: auto;
+}
+
+body > main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e6ff77;
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+body > main h1:first-child {
+  margin-bottom: 50px;
+}
+
+nav > a {
+  margin: 20px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+nav > a:hover {
+  color: white;
+  background-color: #ff0404;
+}
+
+nav > a.active {
+  color: rgb(131, 108, 9);
+}
+
+#new-form {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, minmax(auto, 22rem));
+}
+
+#new-form *, #add-review-form * {
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#add-review-form {
+  margin-top: 20px;
+}
+
+#reviews-table {
+  margin-top: 100px;
+  table-layout: fixed;
+  width: 1000px;
+  word-break: break-word;
+}
+
+#reviews-table > tr > td:nth-of-type(2) {
+  overflow: hidden;
+  text-align: left;
+}
+
+#new-form input[type="submit"] {
+  grid-column: span 2;
+  width: 10rem;
+  margin-left: auto;
+}
+
+table {
+  font-size: 20px;
+}
+
+table thead th {
+  padding: 5px;
+  /* border-bottom: 2px solid #424748; */
+}
+
+table td {
+  padding: 10px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+td > a:hover {
+  text-decoration: underline;
+}
+
+#show-page {
+  align-items: left;
+}
+
+
+
+
+
+
