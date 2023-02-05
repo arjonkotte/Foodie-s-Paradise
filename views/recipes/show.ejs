@@ -1,18 +1,18 @@
 <%- include('../partials/header') %>
-<div id="show-page">
-<h3>Preparation time: <%=recipe.prepTime%></h3>
+
+<h3 class="show-page"show >Preparation time: <%=recipe.prepTime%></h3>
 <!-- <img> -->
-<h2>Ingredients:</h2>
-<ul>
+<h2 class="show-page">Ingredients:</h2>
+<ul class="show-page">
     <% recipe.ingredients.forEach(function(r){ %>
     <li><%=r%></li>
     <%})%>
 </ul>
 
-<h2>Cooking Instructions:</h2>
-<p><%=recipe.instructions%></p>
+<h2 class="show-page">Cooking Instructions:</h2>
+<p class="show-page"><%=recipe.instructions%></p>
 
-<table id="reviews-table">
+<table id="reviews-table" class="show-page">
     <thead>
         <th>Name</th>
         <th>Comments</th>
@@ -46,5 +46,4 @@
     </select>
     <button type="submit">Add Review</button>
   </form>
-</div>
 <%- include('../partials/footer') %>
