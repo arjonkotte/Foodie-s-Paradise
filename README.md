@@ -20,7 +20,7 @@ Technologies used:
 
 ### User Stories
 
-![image](https://user-images.githubusercontent.com/111325773/217380637-78a1fc37-c867-4b13-b478-7b496fbf10a5.png)
+![image](https://user-images.githubusercontent.com/111325773/217384821-9254b3b3-366f-4190-bbdc-6ef56deb8770.png)
 
 ### Wireframes & Models
 
