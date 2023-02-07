@@ -1,5 +1,4 @@
 * {
-  box-sizing: border-box;
   font-family: "Helvetica", cursive;
   color: #352005;
 }
@@ -12,6 +11,10 @@ body {
   grid-template-areas: 
     "nav"
     "main"
+}
+
+nav > h1 {
+  font-family: 'Lucida Handwriting', cursive;
 }
 
 h2 {
@@ -30,24 +33,23 @@ body > nav {
   padding: 0 50px 0 30px;
 }
 
-nav > img {
-  width: 34px;
-  object-fit: contain;
-  margin-right: auto;
-}
 
 body > main {
   grid-area: main;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #e6ff77;
+  background-color: #f4ffc1;
   padding: 20px;
   overflow-y: scroll;
 }
 
 body > main h1:first-child {
-  margin-bottom: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+  height: 10vh;
+  padding: 10px;
+  border: 10px;
 }
 
 nav > a {
@@ -80,6 +82,8 @@ nav > a.active {
 
 #add-review-form {
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 #reviews-table {
@@ -106,12 +110,13 @@ table {
 
 table thead th {
   padding: 5px;
+  text-align: left;
   /* border-bottom: 2px solid #424748; */
 }
 
 table td {
-  padding: 10px;
-  text-align: center;
+  padding: 10px 80px 10px 5px;
+  text-align: left;
 }
 
 a {
@@ -165,9 +170,10 @@ td > a:hover {
   #reviews-table {
     margin-top: 30px;
     table-layout: fixed;
-    width: 95vw;
+    width: 75vw;
     word-break: break-word;
   }
+
   
   #reviews-table > tr > td:nth-of-type(2) {
     overflow: hidden;
@@ -176,3 +182,16 @@ td > a:hover {
 }
 
 
+#instructions {
+  height: 100px;
+  text-align: top;
+  overflow-y: scroll;
+}
+
+#cooking-instructions {
+  width: 50vw;
+}
+
+#comments {
+  height: 150px;
+}
