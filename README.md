@@ -23,6 +23,7 @@ Technologies used are:
 ## Wireframes & Models
 
 ![image](https://user-images.githubusercontent.com/111325773/217380780-2443e38c-5ba6-4ac0-a74b-c8d0810c8da0.png)
+
 ## Landing Page
 ![image](https://user-images.githubusercontent.com/111325773/217380540-89ff01bb-0e05-4785-b7c3-4849e5f26bc2.png)
 
