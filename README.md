@@ -4,7 +4,7 @@
 # Overview
 The recipe room is an app that is used to browse recipes and instrcutions added by various authors.
 
-Technologies used are:
+Technologies used:
 * HTML
 * Javascript
 * CSS
